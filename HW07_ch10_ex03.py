@@ -6,3 +6,16 @@
 # In your final submission:
 #  - Do not print anything extraneous!
 #  - Do not put anything but pass in main()
+
+
+def cumulative_sum(t):
+    for index, value in enumerate(t[1:], start=1):
+        t[index] = t[index] + t[index - 1]
+    return t
+
+
+def main():
+    pass
+
+if __name__ == '__main__':
+    main()
